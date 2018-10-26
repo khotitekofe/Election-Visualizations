@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.1/js/responsive.bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Starter script(s). -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      main.initMap();
+    });
+  </script>
+  <!-- End starter script(s). -->
+
+  <div id="wrapper">
+    <div id="map-column">
+      <h3>CÁMARA DE REPRESENTANTES</h3>
+
+      <svg></svg>
+    </div>
+
+    <div id="table-column">
+      <table id="dept-table" class="table table-striped table-bordered">
+        <thead>
+          <!--
+          <tr>
+            <th scope="col">Mesas Informadas</th>
+            <th scope="col">Votación</th>
+            <th scope="col">Votos no Marcados</th>
+            <th scope="col">Votos Nulos</th>
+          </tr>
+          -->
+          <tr>
+            <th>Departamento</th>
+            <th>Mesas Informadas (%)</th>
+            <th>Partido</th>
+          </tr>
+        </thead>
+        <tbody id="dept-details">
+          <!-- Programmatically populated. -->
+        </tbody>
+        <!--
+        <tfoot>
+            <tr>
+              <th>Departamento</th>
+              <th>Mesas Informadas (%)</th>
+              <th>Partido</th>
+            </tr>
+        </tfoot>
+      -->
+      </table>
+    </div>
+
+  </div>
+
+  <div id=footer></div>
+
+</body>
+
+</html>

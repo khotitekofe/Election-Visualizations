@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  padding: 10px 10px 10px 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: flex;
+  /*height: 900px;*/
+}
+
+#table-column {
+  margin-top: 50px;
+  padding-left: 20px;
+  float: right;
+  width: 800px;
+  height: 750px;
+}
+
+#map-column {
+  float: left;
+  display: inline;
+}
+
+.background {
+  fill: #eee;
+  pointer-events: all;
+}
+
+.map-layer {
+  fill: #fff;
+  stroke: #aaa;
+}
+
+.effect-layer {
+  pointer-events: none;
+}
+
+text {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+text.label-text {
+  font-size: 20px;
+}
+
+h3 {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #00b0ac;
+}
